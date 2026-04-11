@@ -1,4 +1,5 @@
 ﻿using Spectre.Console;
+using Flashcards.Database;
 
 namespace Flashcards
 {
@@ -7,6 +8,10 @@ namespace Flashcards
         public static void Main()
         {
             var isRunningApp = true;
+
+            var db = new Initialize();
+            db.InitializeDb();
+
             while (isRunningApp)
             {
                 AnsiConsole.MarkupLine("[bold green]MAIN MENU[/]");
