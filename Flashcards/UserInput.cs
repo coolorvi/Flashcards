@@ -1,5 +1,6 @@
-﻿using Spectre.Console;
-using Flashcards.Database;
+﻿using Flashcards.Database;
+using Microsoft.Extensions.Configuration;
+using Spectre.Console;
 
 namespace Flashcards
 {
@@ -11,6 +12,15 @@ namespace Flashcards
 
             var db = new Initialize();
             db.InitializeDb();
+
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .Build();
+
+            var connectionString = configuration.GetConnectionString("DefaultConnection") ?? throw new Exception("Oops! No connection string!");
+
+            var Stacks = new Stacks(connectionString);
 
             while (isRunningApp)
             {
@@ -32,7 +42,21 @@ namespace Flashcards
                     case "Manage Stacks":
                         AnsiConsole.MarkupLine("[bold green]STACKS MENU[/]");
                         AnsiConsole.WriteLine("Your created stacks:");
+                        
                         // Here list of stack names
+
+                        var listStacks = Stacks.ReadAllStacks(configuration);
+
+                        if (listStacks is null)
+                        {
+                            AnsiConsole.MarkupLine("[bold yellow]You don't have any stacks created yet.[/]");
+                        } else
+                        {
+                            foreach (Flashcards.Models.Stack stack in listStacks)
+                            {
+                                AnsiConsole.WriteLine(stack.Name);
+                            }
+                        }
 
                         var choiceStacksAction = AnsiConsole.Prompt(
                             new SelectionPrompt<string>()
@@ -48,14 +72,26 @@ namespace Flashcards
                                 AnsiConsole.Clear();
                                 break;
                             case "Add a stack":
-                                var nameStack = new TextPrompt<string>("Enter the name of the new stack:");
+                                var nameStack = AnsiConsole.Prompt(new TextPrompt<string>("Enter the name of the new stack:"));
                                 // Insert request
+                                Stacks.AddStack(configuration, nameStack.ToString());
                                 break;
                             case "Delete a stack":
+                                var deleteStack = AnsiConsole.Prompt(
+                                    new SelectionPrompt<Flashcards.Models.Stack>()
+                                    .Title("[yellow]Which stack do you want to delete?[/]")
+                                    .AddChoices(listStacks));
                                 // Delete request
+                                Stacks.DeleteStack(configuration, deleteStack.Id);
                                 break;
                             case "Update the stack name":
                                 // Update request
+                                var updateStack = AnsiConsole.Prompt(
+                                    new SelectionPrompt<Flashcards.Models.Stack>()
+                                    .Title("[yellow]Which stack do you want to update?[/]")
+                                    .AddChoices(listStacks));
+                                var newNameStack = AnsiConsole.Prompt(new TextPrompt<string>("Enter the new name of the stack:"));
+                                Stacks.UpdateNameStack(configuration, newNameStack.ToString(), updateStack.Id);
                                 break;
                         }
 
@@ -91,7 +127,6 @@ namespace Flashcards
                                 // Update request
                                 break;
                         }
-
                         break;
                     case "Start Study Session":
                         // Call function StartStudySession()
