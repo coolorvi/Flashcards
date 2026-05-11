@@ -7,16 +7,28 @@
       "RelativeMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|solutionrelative:userinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|d:\\projects git\\c#\\flashcards\\flashcards\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|d:\\projects git\\c#\\flashcards\\flashcards\\database\\sessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|solutionrelative:database\\sessions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|d:\\projects git\\c#\\flashcards\\flashcards\\database\\cards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|solutionrelative:database\\cards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|d:\\projects git\\c#\\flashcards\\flashcards\\database\\stacks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|solutionrelative:database\\stacks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|d:\\projects git\\c#\\flashcards\\flashcards\\database\\initialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|solutionrelative:database\\initialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|d:\\projects git\\c#\\flashcards\\flashcards\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|solutionrelative:models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|d:\\projects git\\c#\\flashcards\\flashcards\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|d:\\projects git\\c#\\flashcards\\flashcards\\database\\initialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F45D8A-0F1D-516C-C11F-04467BCC1FFA}|Flashcards.csproj|solutionrelative:database\\initialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,9 +46,9 @@
               "Title": "UserInput.cs",
               "DocumentMoniker": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\UserInput.cs",
               "RelativeDocumentMoniker": "UserInput.cs",
-              "ToolTip": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\UserInput.cs*",
-              "RelativeToolTip": "UserInput.cs*",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAgwBgAAAAgAAAAAAAAAA==",
+              "ToolTip": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\UserInput.cs",
+              "RelativeToolTip": "UserInput.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T18:20:30.909Z",
               "IsPinned": true,
@@ -44,32 +56,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Sessions.cs",
+              "DocumentMoniker": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\Database\\Sessions.cs",
+              "RelativeDocumentMoniker": "Database\\Sessions.cs",
+              "ToolTip": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\Database\\Sessions.cs*",
+              "RelativeToolTip": "Database\\Sessions.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T15:41:44.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cards.cs",
+              "DocumentMoniker": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\Database\\Cards.cs",
+              "RelativeDocumentMoniker": "Database\\Cards.cs",
+              "ToolTip": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\Database\\Cards.cs",
+              "RelativeToolTip": "Database\\Cards.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T11:15:18.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Card.cs",
+              "DocumentMoniker": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\Models\\Card.cs",
+              "RelativeDocumentMoniker": "Models\\Card.cs",
+              "ToolTip": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\Models\\Card.cs",
+              "RelativeToolTip": "Models\\Card.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T18:48:05.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Stacks.cs",
               "DocumentMoniker": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\Database\\Stacks.cs",
               "RelativeDocumentMoniker": "Database\\Stacks.cs",
-              "ToolTip": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\Database\\Stacks.cs*",
-              "RelativeToolTip": "Database\\Stacks.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "ToolTip": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\Database\\Stacks.cs",
+              "RelativeToolTip": "Database\\Stacks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T20:01:10.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Initialize.cs",
               "DocumentMoniker": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\Database\\Initialize.cs",
               "RelativeDocumentMoniker": "Database\\Initialize.cs",
               "ToolTip": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\Database\\Initialize.cs",
               "RelativeToolTip": "Database\\Initialize.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T20:01:16.362Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Projects Git\\C#\\Flashcards\\Flashcards\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -77,7 +127,8 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-11T12:03:28.63Z"
+              "WhenOpened": "2026-04-11T12:03:28.63Z",
+              "EditorCaption": ""
             }
           ]
         }

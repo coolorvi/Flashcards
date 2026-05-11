@@ -47,8 +47,6 @@ namespace Flashcards.Database
             request = "IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Sessions') CREATE TABLE Sessions (ID INT IDENTITY(1,1) PRIMARY KEY, Date DATETIME NOT NULL, Score INT)";
 
             connection.Execute(request);
-
-            AnsiConsole.WriteLine("Cool!!");
         }
 
     }

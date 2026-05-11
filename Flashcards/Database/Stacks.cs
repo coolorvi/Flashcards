@@ -13,7 +13,7 @@ namespace Flashcards.Database
             _connectionString = connectionString;
         }
 
-        public List<Flashcards.Models.Stack> ReadAllStacks(IConfigurationRoot configuration)
+        public List<Flashcards.Models.Stack> ReadAllStacks()
         {
             using var connection = new SqlConnection(_connectionString);
 
@@ -24,7 +24,7 @@ namespace Flashcards.Database
             return nameStacks.ToList();
         }
 
-        public void AddStack(IConfigurationRoot configuration, string nameStack)
+        public void AddStack(string nameStack)
         {
             using var connection = new SqlConnection(_connectionString);
 
@@ -33,7 +33,7 @@ namespace Flashcards.Database
             connection.Execute(request, new { Name = nameStack, CountCards = 0 });
         }
 
-        public void DeleteStack(IConfigurationRoot configuration, int idStack)
+        public void DeleteStack(int idStack)
         {
             using var connection = new SqlConnection(_connectionString);
 
@@ -44,7 +44,7 @@ namespace Flashcards.Database
             connection.Execute(request, new { Id = idStack });
         }
 
-        public void UpdateNameStack(IConfigurationRoot configuration, string newNameStack, int idStack)
+        public void UpdateNameStack(string newNameStack, int idStack)
         {
             using var connection = new SqlConnection(_connectionString);
 
